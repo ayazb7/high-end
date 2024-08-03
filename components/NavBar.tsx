@@ -8,20 +8,23 @@ import Link from 'next/link';
 import BurgerMenu from '@/logos/Group 20.svg';
 
 const NavBar = () => {
+  const router = useRouter();
   const [selectedLang, setSelectedLang] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-  const router = useRouter();
 
+  // Set initial language based on current path
   useEffect(() => {
-    setIsMounted(true);
-  }, []);
+    const currentPath = router.pathname;
+    if (currentPath.startsWith('/ar')) {
+      setSelectedLang('AR');
+    } else {
+      setSelectedLang('EN');
+    }
+  }, [router.pathname]);
 
   const handleLanguageChange = (lang: string) => {
     setSelectedLang(lang);
-    if (isMounted) {
-      router.push(`/${lang.toLowerCase()}`);
-    }
+    router.push(`/${lang.toLowerCase()}`);
   };
 
   useEffect(() => {
@@ -34,10 +37,6 @@ const NavBar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  if (!isMounted) {
-    return null;
-  }
 
   return (
     <>
