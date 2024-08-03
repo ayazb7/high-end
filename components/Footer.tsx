@@ -1,6 +1,6 @@
 import React from 'react'
 import logo_blue from '@/logos/logo_bluebg.png'
-import home_logo from '@/logos/icon.svg'
+import home_logo from '@/logos/Icon.svg'
 import Image from '@/node_modules/next/image'
 import Link from '@/node_modules/next/link'
 import Email_logo from '@/logos/mail-01.svg'
