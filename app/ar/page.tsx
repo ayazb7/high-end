@@ -76,7 +76,7 @@ const Home = () => {
             style={{ transform: 'translateY(-10%)' }}
           />
         </div>
-        <Image src={ellipse} className="absolute top-0 right-0 w-[79%] h-[90%] object-cover z-2" />
+        <Image src={ellipse} alt="Ellipse" className="absolute top-0 right-0 w-[79%] h-[90%] object-cover z-2" />
         <div className="absolute inset-0 flex justify-between items-start p-16">
           <div className="w-2/5">
             <ContactCard />
