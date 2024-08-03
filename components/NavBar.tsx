@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import english_logo from "@/logos/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,18 +9,18 @@ import BurgerMenu from '@/logos/Group 20.svg';
 
 const NavBar = () => {
   const router = useRouter();
+  const pathname = usePathname();
   const [selectedLang, setSelectedLang] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
 
   // Set initial language based on current path
   useEffect(() => {
-    const currentPath = router.pathname;
-    if (currentPath.startsWith('/ar')) {
+    if (pathname.startsWith('/ar')) {
       setSelectedLang('AR');
     } else {
       setSelectedLang('EN');
     }
-  }, [router.pathname]);
+  }, [pathname]);
 
   const handleLanguageChange = (lang: string) => {
     setSelectedLang(lang);
