@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import english_logo from "@/logos/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,18 +10,19 @@ import BurgerMenu from '@/logos/Group 20.svg'
 const NavBar = () => {
   const [selectedLang, setSelectedLang] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
 
   const handleLanguageChange = (lang: string) => {
     setSelectedLang(lang);
+    router.push(`/${lang.toLowerCase()}`);
   };
 
-  useEffect(() => {
+   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
