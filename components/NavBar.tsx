@@ -65,7 +65,7 @@ const NavBar = () => {
             <Image src={english_logo} alt="Highend logo" height={86} width={65} /> 
           </Link>
         </div>
-        <Image src={BurgerMenu} />
+        <Image src={BurgerMenu} alt="Burger Menu"/>
         {/* <div className="flex items-center w-25 h-8 gap-0.5"> 
           <button
             className={`button-18 ${selectedLang === 'EN' ? 'selected' : ''}`}
