@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "@/app/globals.css";
+import ArNavBar from "@/components/ArNavBar";
+import ArFooter from "@/components/ArFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ 
@@ -25,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-          <NavBar />
+          <ArNavBar />
           {children}
-          <Footer />
+          <ArFooter />
         </body>
     </html>
   );

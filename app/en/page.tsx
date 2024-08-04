@@ -53,6 +53,7 @@ const Home = () => {
             <Link href="/services" legacyBehavior>
               <a className="button-filled">Our Services</a>
             </Link>
+            <ScrollContactButton />
           </div>
         </div>
         <ScrollButton />
