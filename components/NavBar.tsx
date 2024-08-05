@@ -5,13 +5,18 @@ import { useRouter, usePathname } from 'next/navigation';
 import english_logo from "@/logos/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
-import BurgerMenu from '@/logos/Group 20.svg';
+import { AnimatePresence, motion } from 'framer-motion';
+// Assuming these SVGs are being used directly in the code
+import MySVG from '@/logos/menu.svg';
+import MyCloseSVG from '@/logos/close.svg';
 
 const NavBar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [selectedLang, setSelectedLang] = useState('EN');
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   // Set initial language based on current path
   useEffect(() => {
@@ -25,6 +30,14 @@ const NavBar = () => {
   const handleLanguageChange = (lang: string) => {
     setSelectedLang(lang);
     router.push(`/${lang.toLowerCase()}`);
+  };
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleButtonClick = () => {
+    // Your button click handler logic
   };
 
   useEffect(() => {
@@ -77,21 +90,41 @@ const NavBar = () => {
             <Image src={english_logo} alt="Highend logo" height={86} width={65} />
           </Link>
         </div>
-        <Image src={BurgerMenu} alt="Burger Menu"/>
-        {/* <div className="flex items-center w-25 h-8 gap-0.5">
-          <button
-            className={`button-18 ${selectedLang === 'EN' ? 'selected' : ''}`}
+        <div onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>
+          <Image src={isClicked ? MyCloseSVG : MySVG} alt="Menu Icon" className={`menu-mobile-only ${isClicked ? 'clicked' : ''} w-[39px]`} />
+        </div>
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="burger-menu"
+              initial={{ opacity: 0, x: '100%' }} // Slide in from the right
+              animate={{ opacity: 1, x: 0 }} // Slide to the center
+              exit={{ opacity: 0, x: '100%' }} // Slide out to the right
+              transition={{ duration: 0.3 }}
+            >
+              <div className="items-end" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>
+                <Image src={MyCloseSVG} alt="Close Icon" className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} w-[39px] h-[50px] mt-10 ml-40`} />
+              </div>
+              <Link href="/markets" className="text-my_blue font-semibold ">Markets</Link>
+              <Link href="/service" className="text_my_blue font-semibold">Services</Link>
+              <Link href="/about" className="text_my_blue font-semibold ">About</Link>
+       
+      
+            <button
+            className={`button-18 ${selectedLang === 'EN' ? 'selected' : ''} button-mobile`}
             onClick={() => handleLanguageChange('EN')}
           >
             EN
           </button>
           <button
-            className={`button-18 button-switch ${selectedLang === 'AR' ? 'selected' : ''}`}
+            className={`button-18 button-switch ${selectedLang === 'AR' ? 'selected' : ''} button-mobile`}
             onClick={() => handleLanguageChange('AR')}
           >
             AR
           </button>
-        </div> */}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );
