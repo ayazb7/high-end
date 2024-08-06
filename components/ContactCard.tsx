@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const ContactCard = () => {
   return (
     <div className="flex flex-col absolute md:left-16 md:top-16 left-0  w-[100%] md:w-[45%] md:h-[70%] z-3 bg-white justify-start items-center pb-10 pt-24 rounded-[30px] shadow-md">
