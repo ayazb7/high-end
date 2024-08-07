@@ -91,9 +91,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">ابدأ الآن</button>
         <div className="flex justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="واردات دولية" />
-          <Card imageSrc={cardImage2} text="توزيع المنتجات" />
-          <Card imageSrc={cardImage1} text="توصيل التجزئة" />
+          <Card imageSrc={cardImage1} text="واردات دولية" content='jkfboahfoieha' />
+          <Card imageSrc={cardImage2} text="توزيع المنتجات" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage1} text="توصيل التجزئة" content='jkfboahfoieha'/>
         </div>
       </div>
 
@@ -105,9 +105,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">ابدأ الآن</button>
         <div className="flex flex-col items-center justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="واردات دولية" />
-          <Card imageSrc={cardImage2} text="توزيع المنتجات" />
-          <Card imageSrc={cardImage1} text="توصيل التجزئة" />
+          <Card imageSrc={cardImage1} text="واردات دولية" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage2} text="توزيع المنتجات" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage1} text="توصيل التجزئة" content='jkfboahfoieha'/>
         </div>
       </div>
 

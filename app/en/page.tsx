@@ -91,9 +91,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">Get Started</button>
         <div className="flex justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="International imports" />
-          <Card imageSrc={cardImage2} text="Product distribution" />
-          <Card imageSrc={cardImage1} text="Retail delivery" />
+          <Card imageSrc={cardImage1} text="International imports" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage2} text="Product distribution" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage1} text="Retail delivery" content='jkfboahfoieha'/>
         </div>
         {/**mobile version services section */}
       </div>
@@ -104,9 +104,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">Get Started</button>
         <div className="flex flex-col items-center justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="International imports" />
-          <Card imageSrc={cardImage2} text="Product distribution" />
-          <Card imageSrc={cardImage1} text="Retail delivery" />
+          <Card imageSrc={cardImage1} text="International imports" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage2} text="Product distribution" content='jkfboahfoieha' />
+          <Card imageSrc={cardImage1} text="Retail delivery" content='jkfboahfoieha'/>
         </div>
       </div>
       {/** Contact Us Section */}
