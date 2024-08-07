@@ -31,7 +31,7 @@ const Footer = () => {
             <div className='flex w-full space-x-3'>
                 
                 <Image src={Email_logo} alt="Logo" />
-                <p className='text-white text-base font-medium'>email@highend.com</p>
+                <p className='text-white text-base font-medium'>info@highendtrading.ae</p>
             </div>
             
         </div>
@@ -41,14 +41,14 @@ const Footer = () => {
         <div className='flex flex-col justify-start ml-4 space-y-1'>
             <a className='mb-1 text-white text-xl font-bold'>Company</a>
             <Link href='/' className='text-white text-base font-medium'>Home</Link>
-            <Link href='/about' className='text-white text-base font-medium'>About</Link>
+            <Link href='/en/about' className='text-white text-base font-medium'>About</Link>
             <Link href='/contact' className='text-white text-base font-medium'>Contact</Link>
         </div>
         <div className='flex flex-col justify-start ml-4 space-y-1'>
             <a className='mb-1 text-white text-xl font-bold'>Services</a>
-            <Link href='/' className='text-white text-base font-medium'>Import</Link>
-            <Link href='/' className='text-white text-base font-medium'>Distribution</Link>
-            <Link href='/' className='text-white text-base font-medium'>Delivery</Link>
+            <Link href='/en' className='text-white text-base font-medium'>Import</Link>
+            <Link href='/en' className='text-white text-base font-medium'>Distribution</Link>
+            <Link href='/en' className='text-white text-base font-medium'>Delivery</Link>
         </div>
         <div className='flex flex-col justify-start ml-3 my-10 mr-20 gap-5'>
             <a className='mb-1 text-white text-xl font-bold'>Information</a>

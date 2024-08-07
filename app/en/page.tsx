@@ -74,7 +74,7 @@ const Home = () => {
             UAE-based premier trading company specializing in importing high-quality products from around the world.
           </p>
           <div className="flex space-x-8 items-center justify-center">
-            <Link href="/services" legacyBehavior>
+            <Link href="#services" legacyBehavior>
               <a className="button-filled w-[125px] h-[47px] text-[12px] font-semibold">Our Services</a>
             </Link>
             <ScrollContactButton />
@@ -84,7 +84,7 @@ const Home = () => {
       
 
       {/** Desktop version Services Section */}
-      <div id="services-section" className="md:flex hidden flex-col items-center justify-center h-auto bg-white py-16">
+      <div id="services" className="md:flex hidden flex-col items-center justify-center h-auto bg-white py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">The UAE’s leading trading platform</h2>
         <p className="text-base md:text-lg font-medium text-gray-700 max-w-4xl text-center mb-10">
           Our mission is to deliver quality products from global markets to local retailers, fostering strong business relationships and contributing to the economic growth of the UAE.
