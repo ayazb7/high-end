@@ -4,7 +4,7 @@ import React from 'react';
 
 const ScrollButton = () => {
   const scrollToSection = () => {
-    const section = document.getElementById('services-section');
+    const section = document.getElementById('services');
     if (section) {
       const sectionTop = section.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = sectionTop - 80;
