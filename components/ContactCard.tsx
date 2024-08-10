@@ -7,23 +7,23 @@ const ContactCard = () => {
   const [emailval, setemailVal] = useState("");
   const [messageval, setMessagetVal] = useState("");
 
-  const changefirst = (event) => {
+  const changefirst = (event :  React.ChangeEvent<HTMLInputElement>) => {
     setfirstVal(event.target.value);
   };
 
-  const changelst = (event) => {
+  const changelst = (event :  React.ChangeEvent<HTMLInputElement>)  => {
     setlastVal(event.target.value);
   };
 
-  const changephone = (event) => {
+  const changephone = (event :  React.ChangeEvent<HTMLInputElement>) => {
     setPhonetVal(event.target.value);
   };
 
-  const changeemail = (event) => {
+  const changeemail = (event :  React.ChangeEvent<HTMLInputElement>) => {
     setemailVal(event.target.value);
   };
 
-  const changeMessage = (event) => {
+  const changeMessage = (event :  React.ChangeEvent<HTMLInputElement>) => {
     setMessagetVal(event.target.value);
   };
 
