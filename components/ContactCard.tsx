@@ -23,7 +23,7 @@ const ContactCard = () => {
     setemailVal(event.target.value);
   };
 
-  const changeMessage = (event :  React.ChangeEvent<HTMLInputElement>): void => {
+  const changeMessage = (event :  React.ChangeEvent<HTMLTextAreaElement>): void => {
     setMessagetVal(event.target.value);
   };
 
