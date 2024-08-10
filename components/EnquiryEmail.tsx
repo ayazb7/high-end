@@ -37,7 +37,7 @@ import {
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={mylogo}
+            src="../logos/logo_bluebg.png"
             width="170"
             height="50"
             alt="Company Logo"
