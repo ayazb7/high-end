@@ -61,7 +61,7 @@ const ArNavBar = () => {
         </div>
         <div className="flex justify-center items-center text-my_blue gap-8 h-full">
           <Link href="/ar/markets" className="text-my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">الأسواق</Link>
-          <Link href="/ar" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">خدمات</Link>
+          <Link href="/ar/#services-section" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">خدمات</Link>
           <Link href="/ar/about" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">عن</Link>
         </div>
         <div className="flex items-center w-25 h-8 gap-0.5">
@@ -104,7 +104,7 @@ const ArNavBar = () => {
               </div>
               <div className='flex flex-col items-center helper'>
               <Link href="/ar/markets" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }} className="text-my_blue font-semibold helper2">الأسواق</Link>
-              <Link href="/ar" className="text_my_blue font-semibold helper2" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>خدمات</Link>
+              <Link href="/ar/#services-section" className="text_my_blue font-semibold helper2" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>خدمات</Link>
               <Link href="/ar/about" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }} className="text_my_blue font-semibold helper2">عن</Link>
               
        
