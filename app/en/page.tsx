@@ -91,9 +91,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">Get Started</button>
         <div className="flex justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="International imports" content='jkfboahfoieha'/>
-          <Card imageSrc={cardImage2} text="Product distribution" content='jkfboahfoieha'/>
-          <Card imageSrc={cardImage1} text="Retail delivery" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage1} text="International imports" content='Importing a diverse range of products from international markets.'/>
+          <Card imageSrc={cardImage2} text="Product distribution" content='Efficiently managing and distributing these products to retailers across the UAE.'/>
+          <Card imageSrc={cardImage1} text="Retail delivery" content='Providing reliable and timely delivery to meet the demands of our retail partners.'/>
         </div>
         {/**mobile version services section */}
       </div>
@@ -104,9 +104,9 @@ const Home = () => {
         </p>
         <button className="button-custom mb-10">Get Started</button>
         <div className="flex flex-col items-center justify-center gap-2 w-full">
-          <Card imageSrc={cardImage1} text="International imports" content='jkfboahfoieha'/>
-          <Card imageSrc={cardImage2} text="Product distribution" content='jkfboahfoieha' />
-          <Card imageSrc={cardImage1} text="Retail delivery" content='jkfboahfoieha'/>
+          <Card imageSrc={cardImage1} text="International imports" content='Importing a diverse range of products from international markets.'/>
+          <Card imageSrc={cardImage2} text="Product distribution" content='Efficiently managing and distributing these products to retailers across the UAE.' />
+          <Card imageSrc={cardImage1} text="Retail delivery" content='Providing reliable and timely delivery to meet the demands of our retail partners.'/>
         </div>
       </div>
       {/** Contact Us Section */}

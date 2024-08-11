@@ -60,9 +60,9 @@ const ArNavBar = () => {
           </div>
         </div>
         <div className="flex justify-center items-center text-my_blue gap-8 h-full">
-          <Link href="/en/markets" className="text-my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">الأسواق</Link>
-          <Link href="#service" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">خدمات</Link>
-          <Link href="/en/about" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">عن</Link>
+          <Link href="/ar/markets" className="text-my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">الأسواق</Link>
+          <Link href="/ar" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">خدمات</Link>
+          <Link href="/ar/about" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">عن</Link>
         </div>
         <div className="flex items-center w-25 h-8 gap-0.5">
           <button
@@ -103,9 +103,9 @@ const ArNavBar = () => {
                 <Image src={MyCloseSVG} alt="Close Icon" className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} w-[39px] h-[50px] mt-10 ml-40`} />
               </div>
               <div className='flex flex-col items-center helper'>
-              <Link href="/en/markets" className="text-my_blue font-semibold helper2">الأسواق</Link>
-              <Link href="#services" className="text_my_blue font-semibold helper2">خدمات</Link>
-              <Link href="/en/about" className="text_my_blue font-semibold helper2">عن</Link>
+              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar/markets" className="text-my_blue font-semibold helper2">الأسواق</Link></button>
+              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar" className="text_my_blue font-semibold helper2">خدمات</Link></button>
+              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar/about" className="text_my_blue font-semibold helper2">عن</Link></button>
               
        
       
