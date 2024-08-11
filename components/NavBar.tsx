@@ -106,9 +106,9 @@ const NavBar = () => {
                 <Image src={MyCloseSVG} alt="Close Icon" className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} w-[39px] h-[50px] mt-10 ml-40`} />
               </div>
               
-              <Link href="/en/markets" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Markets</Link>
-              <Link href="/en" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Services</Link>
-              <Link href="/en/about" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>About</Link>
+              <Link href="/en/markets" className="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Markets</Link>
+              <Link href="/en" className="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Services</Link>
+              <Link href="/en/about" className="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>About</Link>
               
       
             <button
