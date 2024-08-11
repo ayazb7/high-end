@@ -103,9 +103,9 @@ const ArNavBar = () => {
                 <Image src={MyCloseSVG} alt="Close Icon" className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} w-[39px] h-[50px] mt-10 ml-40`} />
               </div>
               <div className='flex flex-col items-center helper'>
-              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar/markets" className="text-my_blue font-semibold helper2">الأسواق</Link></button>
-              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar" className="text_my_blue font-semibold helper2">خدمات</Link></button>
-              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}><Link href="/ar/about" className="text_my_blue font-semibold helper2">عن</Link></button>
+              <Link href="/ar/markets" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }} className="text-my_blue font-semibold helper2">الأسواق</Link>
+              <Link href="/ar" className="text_my_blue font-semibold helper2" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>خدمات</Link>
+              <Link href="/ar/about" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }} className="text_my_blue font-semibold helper2">عن</Link>
               
        
       

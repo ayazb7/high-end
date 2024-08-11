@@ -105,11 +105,11 @@ const NavBar = () => {
               <div className="items-end" onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>
                 <Image src={MyCloseSVG} alt="Close Icon" className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} w-[39px] h-[50px] mt-10 ml-40`} />
               </div>
-              <div className='items-start justify-start pr-60'>
-              <button className='' onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle();}}><Link href="/en/markets" onclassName="text-my_blue font-semibold ">Markets</Link></button>
-              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle();}}><Link href="/en" onclassName="text-my_blue font-semibold ">Services</Link></button>
-              <button onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle();}}><Link href="/en/about" onclassName="text-my_blue font-semibold ">About</Link></button>
-              </div>
+              
+              <Link href="/en/markets" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Markets</Link>
+              <Link href="/en" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>Services</Link>
+              <Link href="/en/about" onclassName="text-my_blue font-semibold " onClick={() => { setIsClicked(prevState => !prevState); handleMenuToggle(); }}>About</Link>
+              
       
             <button
             className={`button-18 ${selectedLang === 'EN' ? 'selected' : ''} button-mobile`}
