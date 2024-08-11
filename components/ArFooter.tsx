@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
           <div className='flex w-full space-x-3'>
             <Image src={Email_logo} alt="شعار" />
-            <p className='text-white text-base font-medium'>email@highend.com</p>
+            <p className='text-white text-base font-medium'>info@highendtrading.ae</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
           <div className='flex w-full space-x-3'>
             
-            <p className='text-white text-base font-medium'>email@highend.com</p>
+            <p className='text-white text-base font-medium'>info@highendtrading.ae</p>
             <Image src={Email_logo} alt="شعار" />
           </div>
         </div>
