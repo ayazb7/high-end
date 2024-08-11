@@ -64,7 +64,7 @@ const NavBar = () => {
         </div>
         <div className="flex justify-center items-center text-my_blue gap-8 h-full">
           <Link href="/en/markets" className="text-my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">Markets</Link>
-          <Link href="#service" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">Services</Link>
+          <Link href="/en" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">Services</Link>
           <Link href="/en/about" className="text_my_blue font-semibold hover:bg-my_blue hover:text-my_gold hover:scale-1.1 px-6 py-4">About</Link>
         </div>
         <div className="flex items-center w-25 h-8 gap-0.5">

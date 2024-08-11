@@ -54,7 +54,7 @@ const Home = () => {
             <Link href="/services" legacyBehavior>
               <a className="button-filled">خدماتنا</a>
             </Link>
-            <ScrollContactButton />
+            <ScrollContactButton name="تواصل معنا" section="contact-section"/>
           </div>
         </div>
         <ScrollButton />
@@ -78,7 +78,7 @@ const Home = () => {
             <Link href="/services" legacyBehavior>
               <a className="button-filled w-[125px] h-[47px] text-[18px] pr-9 font-semibold">خدماتنا</a>
             </Link>
-            <ScrollContactButton/>
+            <ScrollContactButton name="تواصل معنا" section='contact-section2'/>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@ const Home = () => {
       </div>
 
       {/* Mobile version Contact Section */}
-      <div id="contact-section" className='relative my-8 md:hidden'>
+      <div id="contact-section2" className='relative my-8 md:hidden'>
       <div className="relative w-full h-[1014px] overflow-hidden">
         <Image
           className="absolute inset-0 w-full h-full object-cover object-top"

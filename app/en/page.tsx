@@ -20,18 +20,7 @@ import ellipsesmall from '@/logos/small-ellipse.svg'
 
 
 const Home = () => {
-  const scrollToContact = () => {
-    const section = document.getElementById('contact-section');
-    if (section) {
-      const sectionTop = section.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = sectionTop - 60;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-  };
+  
 
   return (
     <div>
@@ -53,7 +42,7 @@ const Home = () => {
             <Link href="/services" legacyBehavior>
               <a className="button-filled">Our Services</a>
             </Link>
-            <ScrollContactButton />
+            <ScrollContactButton name="Contact" section='contact-section'  />
           </div>
         </div>
         <ScrollButton />
@@ -77,7 +66,7 @@ const Home = () => {
             <Link href="#services" legacyBehavior>
               <a className="button-filled w-[125px] h-[47px] text-[12px] font-semibold">Our Services</a>
             </Link>
-            <ScrollContactButton />
+            <ScrollContactButton name='Contact' section='contact-section2'/>
           </div>
         </div>
       </div>
@@ -146,7 +135,7 @@ const Home = () => {
         </div>
       </div>
       {/** mobile version */}
-      <div id="contact-section" className='relative my-8 md:hidden'>
+      <div id="contact-section2" className='relative my-8 md:hidden'>
       <div className="relative w-full h-[1014px] overflow-hidden">
         <Image
           className="absolute inset-0 w-full h-full object-cover object-top"

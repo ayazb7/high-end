@@ -1,10 +1,17 @@
 "use client";
 
 import React from 'react';
-
-const ScrollContactButton = () => {
+interface CardProps {
+  
+  name: string;
+  section : string
+  
+}
+const ScrollContactButton : React.FC<CardProps> = ( {name , section} ) => {
+    const mysection = section
     const scrollToContact = () => {
-        const section = document.getElementById('contact-section');
+        const section = document.getElementById(mysection);
+        
         if (section) {
           const sectionTop = section.getBoundingClientRect().top + window.scrollY;
           const offsetPosition = sectionTop - 60;
@@ -13,12 +20,16 @@ const ScrollContactButton = () => {
             top: offsetPosition,
             behavior: 'smooth',
           });
+          
+        }
+        else{
+          
         }
       };
 
   return (
     <button className="button-border" onClick={scrollToContact}>
-              Contact
+              {name} 
             </button>
   );
 };
