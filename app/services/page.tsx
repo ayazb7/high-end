@@ -83,8 +83,8 @@ const Page = () => {
         </motion.div>
       </section>
 
-      <section className="h-[100vh] relative flex items-center justify-center text-white  snap-start">
-      <Image src={background2} alt="Background Image for services" className="absolute w-[100vw] h-[100vh] z-0 " />
+      <section className="h-[100vh] bg-black relative flex items-center justify-center text-my_gold  snap-start">
+      <Image src={background2} alt="Background Image for services" className="absolute w-[100vw] h-[100vh] z-0 opacity-60" />
         <motion.div
           className="text-4xl items-center text-center justify-center absolute z-10 space-y-6"
           variants={staggerVariants}
